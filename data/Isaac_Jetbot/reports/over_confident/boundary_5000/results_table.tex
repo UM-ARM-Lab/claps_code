@@ -1,0 +1,40 @@
+\begin{table}[h]
+\vspace{-3mm}
+\captionsetup{              % only affects *this* table
+  skip   = 4pt,             % vertical gap ↓ between caption and table
+}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+% \renewcommand{\arraystretch}{1}
+{\setstretch{0.8}\caption{Marginal Coverage and Volume Ratio (over $625$ validation trials)}}
+\vspace{-3mm}
+\label{tab:isaac_results}
+\begin{tabular}{l|c|c|c|c}
+\toprule
+Algorithm & Marginal Coverage & Volume Ratio & 2D Area Ratio & IoU vs MC\\
+& $(\%)$ $\uparrow$ & (relative to CLAPS) $\downarrow$ & (relative to CLAPS) $\downarrow$ & $(\%)$ $\uparrow$\\
+\midrule
+\rowcolor{red!15} SS EKF & 78.69 & 0.63 & 0.59 & 35.0\\ 
+\midrule
+\rowcolor{red!15} InEKF & 82.74 & \underline{0.47} & \underline{0.57} & 41.8\\ 
+\midrule
+\rowcolor{red!15} SS PP + CP & 89.88 & 2137.37 & 569.54 & 0.2\\ 
+\midrule
+\rowcolor{red!15} Lie PP + CP & 89.88 & 2138.48 & 569.74 & 0.2\\ 
+\midrule
+\rowcolor{green!15} SS EKF + CP & 91.17 & 2.87 & 1.60 & 30.4\\ 
+\midrule
+\rowcolor{red!15} InEKF + 2M & 89.19 & 3.06 & 1.47 & 40.0\\ 
+\midrule
+\rowcolor{green!15} InEKF + MLE & 90.26 & 2.80 & 1.38 & 42.3\\ 
+\midrule
+\rowcolor{red!15} CLAPS & 89.98 & \textbf{1.00} & \textbf{1.00} & 48.4\\ 
+\end{tabular}
+\noindent\begin{minipage}{\linewidth}
+  \scriptsize\raggedright
+Row coloring: \colorbox{green!15}{Light green} indicates coverage $\geq$ target $(1-\targetalpha)$; \colorbox{red!15}{Light red} indicates coverage below target.\\
+Volume Ratio: prediction region volume was divided by the \textit{smallest}'s region volume.
+\end{minipage}
+\vspace{-6mm}
+\end{table}

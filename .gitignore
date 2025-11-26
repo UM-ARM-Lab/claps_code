@@ -1,0 +1,30 @@
+**/__pycache__/
+.vscode/
+
+**.egg-info/
+
+logs/*
+venv/
+
+# Data directory exclusions
+data/Isaac_Jetbot/reports/*/boundary_*/plots_2d/*.png
+data/Isaac_Jetbot/reports/*/boundary_*/plots_3d/*.png
+data/Real_MBot/reports/*/boundary_*/plots_2d/*.png
+data/Real_MBot/reports/*/boundary_*/plots_3d/*.png
+
+# Experiment output
+data/Real_MBot/experiments/default/boundary_*/*/validation/metrics/*.pt
+data/Real_MBot/experiments/default/boundary_*/*/validation/visualizations/*.rrd
+data/Isaac_Jetbot/experiments/over_confident/boundary_*/*/validation/metrics/*.pt
+data/Isaac_Jetbot/experiments/over_confident/boundary_*/*/validation/visualizations/*.rrd
+
+# Exclude large report files
+data/Isaac_Jetbot/reports/*/boundary_*/method_results.pt
+data/Isaac_Jetbot/reports/*/boundary_*/summary_statistics.pt
+data/Isaac_Jetbot/reports/*/boundary_*/mc_polygons.pt
+data/Real_MBot/reports/*/boundary_*/method_results.pt
+data/Real_MBot/reports/*/boundary_*/summary_statistics.pt
+data/Real_MBot/reports/*/boundary_*/mc_polygons.pt
+
+# Exclude vector plot files
+data/**/*.svg

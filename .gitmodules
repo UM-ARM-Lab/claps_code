@@ -1,0 +1,13 @@
+[submodule "external/luis_utils"]
+	path = external/luis_utils
+	url = https://github.com/luis-marques/luis_utils.git
+	branch = claps_public
+[submodule "external/pymatlie"]
+	path = external/pymatlie
+	url = https://github.com/luis-marques/pymatlie.git
+	branch = claps
+
+[submodule "external/mbot_experiments"]
+	path = external/mbot_experiments
+	url = https://github.com/UM-ARM-Lab/mbot_experiments
+	branch = ral25_luis

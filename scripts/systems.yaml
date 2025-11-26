@@ -1,0 +1,55 @@
+
+Isaac_Jetbot:
+  robot_type: UNICYCLE
+  simulator: isaac
+  failure_rate: 0.10
+  planning_dt: 0.5
+  physics_dt: 0.016666666666666666  # This is 1/60 as a float
+  failure_rate: 0.10
+  planner_integrator: fe
+  error_form: LI # left invariant
+  max_batch_size_per_env: 500
+  vel_bounds: [[0.1, 0.5], [0.0, 0.5]]
+  u_acc_bounds: [[0.0, 0.5], [0.0, 2.0]]
+  estimated_process_noise:
+    over_confident:
+      linear_variance: 0.002
+      angular_variance: 0.00015
+    under_confident:
+      linear_variance: 0.006
+      angular_variance: 0.0012
+  sysID:
+    total_time: 2.5
+  calibration:
+    n_ax: 3
+    n_aw: 3
+    n_vx: 3
+    n_wz: 3
+    particles_per_grid_point: 500
+  validation:
+    n_vx: 5
+    n_wz: 5
+    n_ax: 5
+    n_aw: 5
+    MC_samples_for_empirical_coverage: 100_000
+
+Real_MBot:
+  robot_type: UNICYCLE
+  simulator: real_robot
+  failure_rate: 0.10
+  planning_dt: 0.5  
+  physics_dt: 0.016666666666666666  # 60 Hz (this is only used for generating predictions)
+  planner_integrator: fe
+  error_form: LI  
+  max_batch_size_per_env: 1  # Single particle per execution
+  vel_bounds: [[0.05, 0.50], [0.0, 0.5]] 
+  u_acc_bounds: [[0.0, 0.5], [0.0, 2.0]]  
+  estimated_process_noise:
+    default:
+      linear_variance: 0.0008
+      angular_variance: 0.00005
+  calibration:
+    split_ratio: 0.05
+    particles_per_grid_point: 1  # Single particle per segment
+  validation:
+    MC_samples_for_empirical_coverage: 1  # Single particle validation
