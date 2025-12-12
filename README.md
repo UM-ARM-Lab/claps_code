@@ -46,7 +46,6 @@ To replicate the simulation (JetBot) results, run
 ## Citing
 
 If you find this repository or our work useful, please consider citing:
-TODO: update this
 ```
 @misc{marques2025liestrustquantifyingaction,
       title={Lies We Can Trust: Quantifying Action Uncertainty with Inaccurate Stochastic Dynamics through Conformalized Nonholonomic Lie Groups}, 
