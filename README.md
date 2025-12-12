@@ -48,10 +48,14 @@ To replicate the simulation (JetBot) results, run
 If you find this repository or our work useful, please consider citing:
 TODO: update this
 ```
-@misc{marques2025confLie, 
-    author    = {Marques, Luis and Ghaffari, Maani and Berenson, Dmitry},
-    title     = {Lies We Can Trust: Quantifying Action Uncertainty with Inaccurate Stochastic Dynamics through Conformalized Nonholonomic Lie Groups}, 
-    year      = {2025}
+@misc{marques2025liestrustquantifyingaction,
+      title={Lies We Can Trust: Quantifying Action Uncertainty with Inaccurate Stochastic Dynamics through Conformalized Nonholonomic Lie Groups}, 
+      author={Luís Marques and Maani Ghaffari and Dmitry Berenson},
+      year={2025},
+      eprint={2512.10294},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2512.10294}, 
 }
 ```
 
