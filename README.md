@@ -47,15 +47,16 @@ To replicate the simulation (JetBot) results, run
 
 If you find this repository or our work useful, please consider citing:
 ```
-@misc{marques2025liestrustquantifyingaction,
-      title={Lies We Can Trust: Quantifying Action Uncertainty with Inaccurate Stochastic Dynamics through Conformalized Nonholonomic Lie Groups}, 
-      author={Luís Marques and Maani Ghaffari and Dmitry Berenson},
-      year={2025},
-      eprint={2512.10294},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2512.10294}, 
-}
+@ARTICLE{11361082,
+  author={Marques, Luís and Ghaffari, Maani and Berenson, Dmitry},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Lies We Can Trust: Quantifying Action Uncertainty With Inaccurate Stochastic Dynamics Through Conformalized Nonholonomic Lie groups}, 
+  year={2026},
+  volume={11},
+  number={4},
+  pages={4801-4808},
+  keywords={Uncertainty;Robots;Lie groups;Heuristic algorithms;Vectors;Vehicle dynamics;Predictive models;Calibration;Robot kinematics;Probabilistic logic;Probability and statistical methods;dynamics;conformal prediction;lie groups},
+  doi={10.1109/LRA.2026.3656773}}
 ```
 
 ## Related Repositories 
